@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: build-your-tower-server
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
